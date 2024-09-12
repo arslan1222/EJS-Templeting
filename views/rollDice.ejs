@@ -1,0 +1,12 @@
+<%- include("includes/head.ejs"); %>
+
+    <body>
+        <div class="center">
+            <h1>Play Game!</h1>
+            <h2>Random number is given: <%= diceValue %>
+            </h2>
+            <% if( diceValue==6 ){ %>
+                <h1>Wow! dice again!</h1>
+            <% } %>
+        </div>
+    </body>

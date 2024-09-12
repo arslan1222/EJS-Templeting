@@ -1,0 +1,14 @@
+Folder
+npm i ejs
+app.set("view engine", "ejs");
+
+our all EJS templates will be in the specific folder that is [views]
+
+D:\EJStemplating\ejs> node script.js -> This will work correctly by seeing script.js file under the views folder
+
+PS D:\EJStemplating> node ejs/script.js -> This will not correctly work. so we make some changes in the code like:
+
+const path = require("path");
+app.set("views", path.join(__dirname, "./views"));
+
+
